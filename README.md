@@ -20,3 +20,6 @@ Si estas teniendo problemas con la API y te esta marcando algun error, dejamelo 
 
 # Preguntas Y Sugerencias
 Si tienes alguna pregunta referente a este proyecto o buscas informacion o ejemplos de como implementar alguna solicitud, puedes hacermela saber en [Discussions](https://github.com/AndresRamos/ARSoftware.Contpaqi.Comercial.Api.Community/discussions).
+
+# Dame Una Estrella
+Si esta API ah side de beneficio pora ti o tu organizacion me podrias ayudar dandome una estrella. Te lo agradeceria!
