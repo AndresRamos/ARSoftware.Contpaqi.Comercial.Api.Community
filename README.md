@@ -1,5 +1,7 @@
 # ARSoftware.Contpaqi.Comercial.Api.Community
-Bienvenido al repositorio comunitario para el proyecto ARSoftware.Contpaqi.Comercial.Api! La API que convierte el sistema de CONTPAQi Comercial Premium en una aplicación nube. Aqui podras encontrar documentacion, levantar reportes, y hacer preguntas.
+Bienvenido al repositorio comunitario para el proyecto [AR Software - CONTPAQi Comercial API](https://www.arsoft.net/contpaqi-comercial-api)! La API que convierte el sistema de CONTPAQi Comercial Premium en una aplicación nube. Aqui podras encontrar documentacion, levantar reportes de errores, y hacer preguntas.
+
+![Web API Swagger](https://github.com/AndresRamos/ARSoftware.Contpaqi.Comercial.Api.Community/blob/main/images/WebApiSwagger.jpg)
 
 # Resumen
 **[AR Software - CONTPAQi Comercial API](https://www.arsoft.net/contpaqi-comercial-api)** convierte el sistema de CONTPAQi Comercial Premium en una aplicación nube. Con ella podrás seguir gozando de los beneficios del sistema como lo es el timbrado ilimitado, y en nuestro contexto, el SDK para crear, modificar, y consultar los diferentes documentos y catálogos. 
