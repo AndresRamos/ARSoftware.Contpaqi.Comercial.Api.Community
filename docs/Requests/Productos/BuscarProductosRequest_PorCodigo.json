@@ -1,0 +1,14 @@
+{
+  "$type": "BuscarProductosRequest",
+  "model": {
+    "id": null,
+    "codigo": "PROD001"
+  },
+  "options": {},
+  "id": "00000000-0000-0000-0000-000000000000",
+  "subscriptionKey": "00000000000000000000000000000000",
+  "empresaRfc": "URE180429TM6",
+  "dateCreated": "2023-03-07T05:52:57.723247-06:00",
+  "status": "Pending",
+  "response": null
+}

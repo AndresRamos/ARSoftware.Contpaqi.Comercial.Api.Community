@@ -1,0 +1,18 @@
+{
+  "$type": "ActualizarAgenteRequest",
+  "model": {
+    "codigoAgente": "AGE001",
+    "datosAgente": {
+      "CFECHAALTAAGENTE": "03/07/2023",
+      "CCOMISIONVENTAAGENTE": "5",
+      "CCOMISIONCOBROAGENTE": "10"
+    }
+  },
+  "options": {},
+  "id": "00000000-0000-0000-0000-000000000000",
+  "subscriptionKey": "00000000000000000000000000000000",
+  "empresaRfc": "URE180429TM6",
+  "dateCreated": "2023-03-07T05:52:57.5680028-06:00",
+  "status": "Pending",
+  "response": null
+}

@@ -1,0 +1,23 @@
+{
+  "$type": "CrearProductoRequest",
+  "model": {
+    "producto": {
+      "codigo": "PROD001",
+      "nombre": "Producto 1",
+      "claveSat": "43231500",
+      "datosExtra": {
+        "CFECHAALTAPRODUCTO": "03/07/2023",
+        "CNOMBREPRODUCTO": "Producto 1",
+        "CCLAVESAT": "43231500",
+        "CTEXTOEXTRA1": "Texto Extra"
+      }
+    }
+  },
+  "options": {},
+  "id": "00000000-0000-0000-0000-000000000000",
+  "subscriptionKey": "00000000000000000000000000000000",
+  "empresaRfc": "URE180429TM6",
+  "dateCreated": "2023-03-07T05:52:57.7091624-06:00",
+  "status": "Pending",
+  "response": null
+}

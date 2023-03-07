@@ -1,0 +1,22 @@
+{
+  "$type": "CancelarDocumentoRequest",
+  "model": {
+    "llaveDocumento": {
+      "conceptoCodigo": "400",
+      "serie": "FE",
+      "folio": 123
+    },
+    "contrasenaCertificado": "12345678a",
+    "motivoCancelacion": "1",
+    "uuid": "b270f307-b3a8-47b5-ba29-b7ae74eda4be"
+  },
+  "options": {
+    "administrativamente": false
+  },
+  "id": "00000000-0000-0000-0000-000000000000",
+  "subscriptionKey": "00000000000000000000000000000000",
+  "empresaRfc": "",
+  "dateCreated": "2023-03-07T05:52:57.8338474-06:00",
+  "status": "Pending",
+  "response": null
+}

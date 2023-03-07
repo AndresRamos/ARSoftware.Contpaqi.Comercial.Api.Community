@@ -1,0 +1,1028 @@
+{
+	"info": {
+		"_postman_id": "c24d30d0-7ff4-4c4e-9fda-84454f24be9d",
+		"name": "CONTPAQi Comercial API",
+		"description": "Esta coleccion expone las diferentes solicitudes que se pueden enviar a la API.\n\nTe recomiendo que revises la documentacion constantemente para actualizaciones ya que es muy probable que aya varios cambios los primeros meses.\n\nSi tienes dudas o preguntas puedes hacermelas saber en una discusion. O si quieres reportar un error puedes levantar un issue.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16633069"
+	},
+	"item": [
+		{
+			"name": "Agentes",
+			"item": [
+				{
+					"name": "Crear Agente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"CrearAgenteRequest\",\r\n    \"model\": {\r\n        \"agente\": {\r\n            \"codigo\": \"AGE001\",\r\n            \"nombre\": \"Agente 1\",\r\n            \"tipo\": \"VentasCobro\",\r\n            \"datosExtra\": {\r\n                \"CFECHAALTAAGENTE\": \"03/06/2023\",\r\n                \"CCOMISIONVENTAAGENTE\": \"5\",\r\n                \"CCOMISIONCOBROAGENTE\": \"10\"\r\n            }\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:24:04.8897042-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Agente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"ActualizarAgenteRequest\",\r\n    \"model\": {\r\n        \"codigoAgente\": \"AGE001\",\r\n        \"datosAgente\": {\r\n            \"CFECHAALTAAGENTE\": \"03/06/2023\",\r\n            \"CCOMISIONVENTAAGENTE\": \"5\",\r\n            \"CCOMISIONCOBROAGENTE\": \"10\"\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:24:05.0088589-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Agentes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarAgentesRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:24:05.0258316-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Agente Por Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"$type\": \"BuscarAgentesRequest\",\r\n  \"model\": {\r\n    \"id\": 100,\r\n    \"codigo\": null\r\n  },\r\n  \"options\": {},\r\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n  \"empresaRfc\": \"URE180429TM6\",\r\n  \"dateCreated\": \"2023-03-06T17:24:05.0130371-06:00\",\r\n  \"status\": \"Pending\",\r\n  \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Agente Por Codigo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"$type\": \"BuscarAgentesRequest\",\r\n  \"model\": {\r\n    \"id\": null,\r\n    \"codigo\": \"AGE001\"\r\n  },\r\n  \"options\": {},\r\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n  \"empresaRfc\": \"URE180429TM6\",\r\n  \"dateCreated\": \"2023-03-06T17:24:05.0249959-06:00\",\r\n  \"status\": \"Pending\",\r\n  \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Almacenes",
+			"item": [
+				{
+					"name": "Crear Almacen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"CrearAlmacenRequest\",\r\n    \"model\": {\r\n        \"almacen\": {\r\n            \"codigo\": \"ALM001\",\r\n            \"nombre\": \"Almacen 1\",\r\n            \"datosExtra\": {\r\n                \"CFECHAALTAALMACEN\": \"03/06/2023\",\r\n                \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n            }\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:36:40.0269531-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Almacen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"ActualizarAlmacenRequest\",\r\n    \"model\": {\r\n        \"codigoAlmacen\": \"ALM001\",\r\n        \"datosAlmacen\": {\r\n            \"CFECHAALTAALMACEN\": \"03/06/2023\",\r\n            \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:36:40.0351512-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Almacenes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarAlmacenesRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:36:40.0513235-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Almacen Por Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarAlmacenesRequest\",\r\n    \"model\": {\r\n        \"id\": 100,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:36:40.0420768-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Almacen Por Codigo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarAlmacenesRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": \"ALM001\"\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:36:40.0499422-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Crear Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"CrearClienteRequest\",\r\n    \"model\": {\r\n        \"cliente\": {\r\n            \"tipo\": \"ClienteProveedor\",\r\n            \"codigo\": \"CTE001\",\r\n            \"razonSocial\": \"Cliente 1\",\r\n            \"rfc\": \"\",\r\n            \"usoCfdi\": \"S01\",\r\n            \"regimenFiscal\": \"616\",\r\n            \"direccionFiscal\": {\r\n                \"calle\": \"Pablo Villase\\u00F1or\",\r\n                \"numeroExterior\": \"435\",\r\n                \"numeroInterior\": \"\",\r\n                \"colonia\": \"Ladr\\u00F3n de Guevara\",\r\n                \"ciudad\": \"Guadalajara\",\r\n                \"estado\": \"Jalisco\",\r\n                \"codigoPostal\": \"44600\",\r\n                \"pais\": \"M\\u00E9xico\"\r\n            },\r\n            \"datosExtra\": {\r\n                \"CFECHAALTA\": \"03/06/2023\",\r\n                \"CRAZONSOCIAL\": \"Cliente 1\",\r\n                \"CRFC\": \"XAXX010101000\",\r\n                \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n            }\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:49:24.1486683-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"ActualizarClienteRequest\",\r\n    \"model\": {\r\n        \"codigoCliente\": \"CTE001\",\r\n        \"datosCliente\": {\r\n            \"CFECHAALTA\": \"03/06/2023\",\r\n            \"CRAZONSOCIAL\": \"Cliente 1\",\r\n            \"CRFC\": \"XAXX010101000\",\r\n            \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:49:24.1718196-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"$type\": \"EliminarClienteRequest\",\r\n  \"model\": {\r\n    \"clienteCodigo\": \"CTE001\"\r\n  },\r\n  \"options\": {},\r\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n  \"empresaRfc\": \"URE180429TM6\",\r\n  \"dateCreated\": \"2023-03-06T17:50:36.5732707-06:00\",\r\n  \"status\": \"Pending\",\r\n  \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarClientesRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:50:36.5722206-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Cliente Por Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarClientesRequest\",\r\n    \"model\": {\r\n        \"id\": 100,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:50:36.5674821-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Cliente Por Codigo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarClientesRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": \"CTE001\"\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:50:36.5712218-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conceptos",
+			"item": [
+				{
+					"name": "Buscar Conceptos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarConceptosRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T17:56:15.1342595-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresas",
+			"item": [
+				{
+					"name": "Buscar Empresas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarEmpresasRequest\",\r\n    \"model\": {},\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"\",\r\n    \"dateCreated\": \"2023-03-06T17:56:15.1399303-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "Crear Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"CrearProductoRequest\",\r\n    \"model\": {\r\n        \"producto\": {\r\n            \"codigo\": \"PROD001\",\r\n            \"nombre\": \"Producto 1\",\r\n            \"claveSat\": \"43231500\",\r\n            \"datosExtra\": {\r\n                \"CFECHAALTAPRODUCTO\": \"03/06/2023\",\r\n                \"CNOMBREPRODUCTO\": \"Producto 1\",\r\n                \"CCLAVESAT\": \"43231500\",\r\n                \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n            }\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T18:04:56.9458578-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"ActualizarProductoRequest\",\r\n    \"model\": {\r\n        \"codigoProducto\": \"PROD001\",\r\n        \"datosProducto\": {\r\n            \"CFECHAALTAPRODUCTO\": \"03/06/2023\",\r\n            \"CNOMBREPRODUCTO\": \"Producto 1\",\r\n            \"CCLAVESAT\": \"43231500\",\r\n            \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T18:04:56.9522879-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"EliminarProductoRequest\",\r\n    \"model\": {\r\n        \"codigoProducto\": \"PROD001\"\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T18:04:56.9639862-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Productos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarProductosRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T18:04:56.9627105-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Producto Por Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarProductosRequest\",\r\n    \"model\": {\r\n        \"id\": 100,\r\n        \"codigo\": null\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T18:04:56.956701-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Producto Por Codigo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"BuscarProductosRequest\",\r\n    \"model\": {\r\n        \"id\": null,\r\n        \"codigo\": \"PROD001\"\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"URE180429TM6\",\r\n    \"dateCreated\": \"2023-03-06T18:04:56.9612606-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documentos",
+			"item": [
+				{
+					"name": "Crear Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"CrearDocumentoRequest\",\r\n    \"model\": {\r\n        \"documento\": {\r\n            \"fecha\": \"2023-03-06T00:00:00-06:00\",\r\n            \"concepto\": {\r\n                \"codigo\": \"400\",\r\n                \"nombre\": \"\",\r\n                \"datosExtra\": {}\r\n            },\r\n            \"serie\": \"\",\r\n            \"folio\": 0,\r\n            \"cliente\": {\r\n                \"tipo\": \"ClienteProveedor\",\r\n                \"codigo\": \"CTE001\",\r\n                \"razonSocial\": \"Cliente 1\",\r\n                \"rfc\": \"\",\r\n                \"usoCfdi\": \"S01\",\r\n                \"regimenFiscal\": \"616\",\r\n                \"direccionFiscal\": {\r\n                    \"calle\": \"Pablo Villase\\u00F1or\",\r\n                    \"numeroExterior\": \"435\",\r\n                    \"numeroInterior\": \"\",\r\n                    \"colonia\": \"Ladr\\u00F3n de Guevara\",\r\n                    \"ciudad\": \"Guadalajara\",\r\n                    \"estado\": \"Jalisco\",\r\n                    \"codigoPostal\": \"44600\",\r\n                    \"pais\": \"M\\u00E9xico\"\r\n                },\r\n                \"datosExtra\": {\r\n                    \"CFECHAALTA\": \"03/06/2023\",\r\n                    \"CRAZONSOCIAL\": \"Cliente 1\",\r\n                    \"CRFC\": \"XAXX010101000\",\r\n                    \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n                }\r\n            },\r\n            \"moneda\": {\r\n                \"id\": 1,\r\n                \"nombre\": \"Peso Mexicano\"\r\n            },\r\n            \"tipoCambio\": 1,\r\n            \"referencia\": \"Referencia doc\",\r\n            \"observaciones\": \"Observaciones del documento.\",\r\n            \"total\": 0,\r\n            \"agente\": {\r\n                \"codigo\": \"AGE001\",\r\n                \"nombre\": \"Agente 1\",\r\n                \"tipo\": \"VentasCobro\",\r\n                \"datosExtra\": {\r\n                    \"CFECHAALTAAGENTE\": \"03/06/2023\",\r\n                    \"CCOMISIONVENTAAGENTE\": \"5\",\r\n                    \"CCOMISIONCOBROAGENTE\": \"10\"\r\n                }\r\n            },\r\n            \"direccionFiscal\": {\r\n                \"calle\": \"\",\r\n                \"numeroExterior\": \"\",\r\n                \"numeroInterior\": \"\",\r\n                \"colonia\": \"\",\r\n                \"ciudad\": \"\",\r\n                \"estado\": \"\",\r\n                \"codigoPostal\": \"\",\r\n                \"pais\": \"\"\r\n            },\r\n            \"formaPago\": \"01\",\r\n            \"metodoPago\": \"PPD\",\r\n            \"movimientos\": [\r\n                {\r\n                    \"producto\": {\r\n                        \"codigo\": \"PROD001\",\r\n                        \"nombre\": \"Producto 1\",\r\n                        \"claveSat\": \"43231500\",\r\n                        \"datosExtra\": {\r\n                            \"CFECHAALTAPRODUCTO\": \"03/06/2023\",\r\n                            \"CNOMBREPRODUCTO\": \"Producto 1\",\r\n                            \"CCLAVESAT\": \"43231500\",\r\n                            \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n                        }\r\n                    },\r\n                    \"unidades\": 1,\r\n                    \"precio\": 100,\r\n                    \"subtotal\": 0,\r\n                    \"total\": 0,\r\n                    \"almacen\": {\r\n                        \"codigo\": \"1\",\r\n                        \"nombre\": \"Almacen Uno\",\r\n                        \"datosExtra\": {}\r\n                    },\r\n                    \"referencia\": \"Referencia mov\",\r\n                    \"observaciones\": \"Observaciones del movimiento\",\r\n                    \"seriesCapas\": [],\r\n                    \"datosExtra\": {}\r\n                }\r\n            ],\r\n            \"folioDigital\": {\r\n                \"uuid\": \"\",\r\n                \"datosExtra\": {}\r\n            },\r\n            \"datosExtra\": {\r\n                \"COBSERVACIONES\": \"Observaciones del documento.\",\r\n                \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n            }\r\n        }\r\n    },\r\n    \"options\": {\r\n        \"usarFechaDelDia\": true,\r\n        \"buscarSiguienteFolio\": true,\r\n        \"crearCatalogos\": false\r\n    },\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"\",\r\n    \"dateCreated\": \"2023-03-06T18:32:27.7189082-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"$type\": \"ActualizarDocumentoRequest\",\r\n  \"model\": {\r\n    \"llaveDocumento\": {\r\n      \"conceptoCodigo\": \"400\",\r\n      \"serie\": \"FE\",\r\n      \"folio\": 123\r\n    },\r\n    \"datosDocumento\": {\r\n      \"COBSERVACIONES\": \"Observaciones del documento.\",\r\n      \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n    }\r\n  },\r\n  \"options\": {},\r\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n  \"empresaRfc\": \"\",\r\n  \"dateCreated\": \"2023-03-06T18:32:27.7952576-06:00\",\r\n  \"status\": \"Pending\",\r\n  \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"$type\": \"CancelarDocumentoRequest\",\r\n  \"model\": {\r\n    \"llaveDocumento\": {\r\n      \"conceptoCodigo\": \"400\",\r\n      \"serie\": \"FE\",\r\n      \"folio\": 123\r\n    },\r\n    \"contrasenaCertificado\": \"12345678a\",\r\n    \"motivoCancelacion\": \"1\",\r\n    \"uuid\": \"2b238962-ad99-4c7c-a2f4-b31d252cf45d\"\r\n  },\r\n  \"options\": {\r\n    \"administrativamente\": false\r\n  },\r\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n  \"empresaRfc\": \"\",\r\n  \"dateCreated\": \"2023-03-06T18:32:27.8337628-06:00\",\r\n  \"status\": \"Pending\",\r\n  \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Factura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"CrearFacturaRequest\",\r\n    \"model\": {\r\n        \"documento\": {\r\n            \"fecha\": \"2023-03-06T00:00:00-06:00\",\r\n            \"concepto\": {\r\n                \"codigo\": \"400\",\r\n                \"nombre\": \"\",\r\n                \"datosExtra\": {}\r\n            },\r\n            \"serie\": \"\",\r\n            \"folio\": 0,\r\n            \"cliente\": {\r\n                \"tipo\": \"ClienteProveedor\",\r\n                \"codigo\": \"CTE001\",\r\n                \"razonSocial\": \"Cliente 1\",\r\n                \"rfc\": \"\",\r\n                \"usoCfdi\": \"S01\",\r\n                \"regimenFiscal\": \"616\",\r\n                \"direccionFiscal\": {\r\n                    \"calle\": \"Pablo Villase\\u00F1or\",\r\n                    \"numeroExterior\": \"435\",\r\n                    \"numeroInterior\": \"\",\r\n                    \"colonia\": \"Ladr\\u00F3n de Guevara\",\r\n                    \"ciudad\": \"Guadalajara\",\r\n                    \"estado\": \"Jalisco\",\r\n                    \"codigoPostal\": \"44600\",\r\n                    \"pais\": \"M\\u00E9xico\"\r\n                },\r\n                \"datosExtra\": {\r\n                    \"CFECHAALTA\": \"03/06/2023\",\r\n                    \"CRAZONSOCIAL\": \"Cliente 1\",\r\n                    \"CRFC\": \"XAXX010101000\",\r\n                    \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n                }\r\n            },\r\n            \"moneda\": {\r\n                \"id\": 1,\r\n                \"nombre\": \"Peso Mexicano\"\r\n            },\r\n            \"tipoCambio\": 1,\r\n            \"referencia\": \"Referencia doc\",\r\n            \"observaciones\": \"Observaciones del documento.\",\r\n            \"total\": 0,\r\n            \"agente\": {\r\n                \"codigo\": \"AGE001\",\r\n                \"nombre\": \"Agente 1\",\r\n                \"tipo\": \"VentasCobro\",\r\n                \"datosExtra\": {\r\n                    \"CFECHAALTAAGENTE\": \"03/06/2023\",\r\n                    \"CCOMISIONVENTAAGENTE\": \"5\",\r\n                    \"CCOMISIONCOBROAGENTE\": \"10\"\r\n                }\r\n            },\r\n            \"direccionFiscal\": {\r\n                \"calle\": \"\",\r\n                \"numeroExterior\": \"\",\r\n                \"numeroInterior\": \"\",\r\n                \"colonia\": \"\",\r\n                \"ciudad\": \"\",\r\n                \"estado\": \"\",\r\n                \"codigoPostal\": \"\",\r\n                \"pais\": \"\"\r\n            },\r\n            \"formaPago\": \"01\",\r\n            \"metodoPago\": \"PPD\",\r\n            \"movimientos\": [\r\n                {\r\n                    \"producto\": {\r\n                        \"codigo\": \"PROD001\",\r\n                        \"nombre\": \"Producto 1\",\r\n                        \"claveSat\": \"43231500\",\r\n                        \"datosExtra\": {\r\n                            \"CFECHAALTAPRODUCTO\": \"03/06/2023\",\r\n                            \"CNOMBREPRODUCTO\": \"Producto 1\",\r\n                            \"CCLAVESAT\": \"43231500\",\r\n                            \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n                        }\r\n                    },\r\n                    \"unidades\": 1,\r\n                    \"precio\": 100,\r\n                    \"subtotal\": 0,\r\n                    \"total\": 0,\r\n                    \"almacen\": {\r\n                        \"codigo\": \"1\",\r\n                        \"nombre\": \"Almacen Uno\",\r\n                        \"datosExtra\": {}\r\n                    },\r\n                    \"referencia\": \"Referencia mov\",\r\n                    \"observaciones\": \"Observaciones del movimiento\",\r\n                    \"seriesCapas\": [],\r\n                    \"datosExtra\": {}\r\n                }\r\n            ],\r\n            \"folioDigital\": {\r\n                \"uuid\": \"\",\r\n                \"datosExtra\": {}\r\n            },\r\n            \"datosExtra\": {\r\n                \"COBSERVACIONES\": \"Observaciones del documento.\",\r\n                \"CTEXTOEXTRA1\": \"Texto Extra\"\r\n            }\r\n        }\r\n    },\r\n    \"options\": {\r\n        \"usarFechaDelDia\": true,\r\n        \"buscarSiguienteFolio\": true,\r\n        \"crearCatalogos\": false,\r\n        \"timbrar\": true,\r\n        \"contrasenaCertificado\": \"12345678a\",\r\n        \"generarDocumentosDigitales\": true,\r\n        \"generarPdf\": true,\r\n        \"nombrePlantilla\": \"Facturav40.rdl\",\r\n        \"agregarArchivo\": false,\r\n        \"nombreArchivo\": \"\",\r\n        \"contenidoArchivo\": \"\"\r\n    },\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"\",\r\n    \"dateCreated\": \"2023-03-06T18:32:27.7864073-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"EliminarDocumentoRequest\",\r\n    \"model\": {\r\n        \"llaveDocumento\": {\r\n            \"conceptoCodigo\": \"400\",\r\n            \"serie\": \"FE\",\r\n            \"folio\": 123\r\n        }\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"\",\r\n    \"dateCreated\": \"2023-03-06T18:32:27.8021665-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generar Documento Digital",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"GenerarDocumentoDigitalRequest\",\r\n    \"model\": {\r\n        \"llaveDocumento\": {\r\n            \"conceptoCodigo\": \"400\",\r\n            \"serie\": \"FE\",\r\n            \"folio\": 123\r\n        }\r\n    },\r\n    \"options\": {\r\n        \"tipo\": \"Pdf\",\r\n        \"nombrePlantilla\": \"Facturav40.rdl\"\r\n    },\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"\",\r\n    \"dateCreated\": \"2023-03-06T18:32:27.8120807-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saldar Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"SaldarDocumentoRequest\",\r\n    \"model\": {\r\n        \"documentoAPagar\": {\r\n            \"conceptoCodigo\": \"400\",\r\n            \"serie\": \"FE\",\r\n            \"folio\": 123\r\n        },\r\n        \"documentoPago\": {\r\n            \"conceptoCodigo\": \"13\",\r\n            \"serie\": \"\",\r\n            \"folio\": 456\r\n        },\r\n        \"fecha\": \"2023-03-06T00:00:00-06:00\",\r\n        \"importe\": 116\r\n    },\r\n    \"options\": {},\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"\",\r\n    \"dateCreated\": \"2023-03-06T18:32:27.8283223-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Timbrar Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"$type\": \"TimbrarDocumentoRequest\",\r\n    \"model\": {\r\n        \"llaveDocumento\": {\r\n            \"conceptoCodigo\": \"400\",\r\n            \"serie\": \"FE\",\r\n            \"folio\": 123\r\n        },\r\n        \"contrasenaCertificado\": \"12345678a\"\r\n    },\r\n    \"options\": {\r\n        \"agregarArchivo\": false,\r\n        \"nombreArchivo\": \"\",\r\n        \"contenidoArchivo\": \"\"\r\n    },\r\n    \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"subscriptionKey\": \"00000000000000000000000000000000\",\r\n    \"empresaRfc\": \"\",\r\n    \"dateCreated\": \"2023-03-06T18:32:27.8061996-06:00\",\r\n    \"status\": \"Pending\",\r\n    \"response\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/requests",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Requests",
+			"item": [
+				{
+					"name": "Request Json Model",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/requests/jsonmodel?requestName=CrearFacturaRequest",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests",
+								"jsonmodel"
+							],
+							"query": [
+								{
+									"key": "requestName",
+									"value": "CrearFacturaRequest"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pending Requests",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYXJzb2Z0d2FyZSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiQXJTb2Z0d2FyZSIsIm5iZiI6IjE2NzU5NTQwMDciLCJleHAiOiIxNjc2MDQwNDA3In0.veGAMGLvVKgwxztgeIUyfQZveUNGnXJ9L3ayUhohrjk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7082/api/requests/pending",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7082",
+							"path": [
+								"api",
+								"requests",
+								"pending"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/requests/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Requests By Date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/requests?startDate=03/01/2023&endDate=03/01/2023",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"requests"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "03/01/2023"
+								},
+								{
+									"key": "endDate",
+									"value": "03/01/2023"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"var header = pm.collectionVariables.get(\"subscriptionKeyHaderName\");",
+					"var key = pm.collectionVariables.get(\"subscriptionKey\");",
+					"pm.request.headers.add({ key: header, value: key });",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:5000/",
+			"type": "string"
+		},
+		{
+			"key": "empresaRfc",
+			"value": "URE180429TM6",
+			"type": "string"
+		},
+		{
+			"key": "subscriptionKeyHaderName",
+			"value": "Ocp-Apim-Subscription-Key",
+			"type": "string"
+		},
+		{
+			"key": "subscriptionKey",
+			"value": "00000000000000000000000000000000",
+			"type": "string"
+		}
+	]
+}

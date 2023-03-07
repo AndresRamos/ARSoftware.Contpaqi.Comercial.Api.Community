@@ -1,0 +1,36 @@
+{
+  "$type": "CrearClienteRequest",
+  "model": {
+    "cliente": {
+      "tipo": "ClienteProveedor",
+      "codigo": "CTE001",
+      "razonSocial": "Cliente 1",
+      "rfc": "",
+      "usoCfdi": "S01",
+      "regimenFiscal": "616",
+      "direccionFiscal": {
+        "calle": "Pablo Villase\u00F1or",
+        "numeroExterior": "435",
+        "numeroInterior": "",
+        "colonia": "Ladr\u00F3n de Guevara",
+        "ciudad": "Guadalajara",
+        "estado": "Jalisco",
+        "codigoPostal": "44600",
+        "pais": "M\u00E9xico"
+      },
+      "datosExtra": {
+        "CFECHAALTA": "03/07/2023",
+        "CRAZONSOCIAL": "Cliente 1",
+        "CRFC": "XAXX010101000",
+        "CTEXTOEXTRA1": "Texto Extra"
+      }
+    }
+  },
+  "options": {},
+  "id": "00000000-0000-0000-0000-000000000000",
+  "subscriptionKey": "00000000000000000000000000000000",
+  "empresaRfc": "URE180429TM6",
+  "dateCreated": "2023-03-07T05:52:57.6465619-06:00",
+  "status": "Pending",
+  "response": null
+}

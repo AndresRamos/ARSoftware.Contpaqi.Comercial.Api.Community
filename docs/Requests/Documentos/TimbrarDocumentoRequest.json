@@ -1,0 +1,22 @@
+{
+  "$type": "TimbrarDocumentoRequest",
+  "model": {
+    "llaveDocumento": {
+      "conceptoCodigo": "400",
+      "serie": "FE",
+      "folio": 123
+    },
+    "contrasenaCertificado": "12345678a"
+  },
+  "options": {
+    "agregarArchivo": false,
+    "nombreArchivo": "",
+    "contenidoArchivo": ""
+  },
+  "id": "00000000-0000-0000-0000-000000000000",
+  "subscriptionKey": "00000000000000000000000000000000",
+  "empresaRfc": "",
+  "dateCreated": "2023-03-07T05:52:57.8066927-06:00",
+  "status": "Pending",
+  "response": null
+}

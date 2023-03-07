@@ -1,0 +1,116 @@
+{
+  "$type": "CrearDocumentoRequest",
+  "model": {
+    "documento": {
+      "fecha": "2023-03-07T00:00:00-06:00",
+      "concepto": {
+        "codigo": "400",
+        "nombre": "",
+        "datosExtra": {}
+      },
+      "serie": "",
+      "folio": 0,
+      "cliente": {
+        "tipo": "ClienteProveedor",
+        "codigo": "CTE001",
+        "razonSocial": "Cliente 1",
+        "rfc": "",
+        "usoCfdi": "S01",
+        "regimenFiscal": "616",
+        "direccionFiscal": {
+          "calle": "Pablo Villase\u00F1or",
+          "numeroExterior": "435",
+          "numeroInterior": "",
+          "colonia": "Ladr\u00F3n de Guevara",
+          "ciudad": "Guadalajara",
+          "estado": "Jalisco",
+          "codigoPostal": "44600",
+          "pais": "M\u00E9xico"
+        },
+        "datosExtra": {
+          "CFECHAALTA": "03/07/2023",
+          "CRAZONSOCIAL": "Cliente 1",
+          "CRFC": "XAXX010101000",
+          "CTEXTOEXTRA1": "Texto Extra"
+        }
+      },
+      "moneda": {
+        "id": 1,
+        "nombre": "Peso Mexicano"
+      },
+      "tipoCambio": 1,
+      "referencia": "Referencia doc",
+      "observaciones": "Observaciones del documento.",
+      "total": 0,
+      "agente": {
+        "codigo": "AGE001",
+        "nombre": "Agente 1",
+        "tipo": "VentasCobro",
+        "datosExtra": {
+          "CFECHAALTAAGENTE": "03/07/2023",
+          "CCOMISIONVENTAAGENTE": "5",
+          "CCOMISIONCOBROAGENTE": "10"
+        }
+      },
+      "direccionFiscal": {
+        "calle": "",
+        "numeroExterior": "",
+        "numeroInterior": "",
+        "colonia": "",
+        "ciudad": "",
+        "estado": "",
+        "codigoPostal": "",
+        "pais": ""
+      },
+      "formaPago": "01",
+      "metodoPago": "PPD",
+      "movimientos": [
+        {
+          "producto": {
+            "codigo": "PROD001",
+            "nombre": "Producto 1",
+            "claveSat": "43231500",
+            "datosExtra": {
+              "CFECHAALTAPRODUCTO": "03/07/2023",
+              "CNOMBREPRODUCTO": "Producto 1",
+              "CCLAVESAT": "43231500",
+              "CTEXTOEXTRA1": "Texto Extra"
+            }
+          },
+          "unidades": 1,
+          "precio": 100,
+          "subtotal": 0,
+          "total": 0,
+          "almacen": {
+            "codigo": "1",
+            "nombre": "Almacen Uno",
+            "datosExtra": {}
+          },
+          "referencia": "Referencia mov",
+          "observaciones": "Observaciones del movimiento",
+          "seriesCapas": [],
+          "datosExtra": {}
+        }
+      ],
+      "folioDigital": {
+        "uuid": "",
+        "datosExtra": {}
+      },
+      "datosExtra": {
+        "COBSERVACIONES": "Observaciones del documento.",
+        "CTEXTOEXTRA1": "Texto Extra"
+      }
+    }
+  },
+  "options": {
+    "usarFechaDelDia": true,
+    "buscarSiguienteFolio": true,
+    "crearCatalogos": false
+  },
+  "id": "00000000-0000-0000-0000-000000000000",
+  "subscriptionKey": "00000000000000000000000000000000",
+  "empresaRfc": "",
+  "dateCreated": "2023-03-07T05:52:57.7315044-06:00",
+  "status": "Pending",
+  "response": null
+}
