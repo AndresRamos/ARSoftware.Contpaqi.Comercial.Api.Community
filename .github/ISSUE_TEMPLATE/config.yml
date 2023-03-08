@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Preguntas
+    url: https://github.com/AndresRamos/ARSoftware.Contpaqi.Comercial.Api.Community/discussions/categories/q-a
+    about: Por favor pregunta y responde aqui.
+  - name: Sugerencias y mejoras
+    url: https://github.com/AndresRamos/ARSoftware.Contpaqi.Comercial.Api.Community/discussions/categories/ideas
+    about: Recomienda modificaciones y mejoras aqui.
