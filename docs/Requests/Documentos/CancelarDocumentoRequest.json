@@ -8,15 +8,16 @@
     },
     "contrasenaCertificado": "12345678a",
     "motivoCancelacion": "1",
-    "uuid": "18ed4d66-bfc5-4ac4-aa45-b08f7b50d3dc"
+    "uuid": "141ba3e9-7e8f-4855-a99c-8628b2db3cc1"
   },
   "options": {
-    "administrativamente": false
+    "administrativamente": false,
+    "cargarDatosExtra": false
   },
   "id": "00000000-0000-0000-0000-000000000000",
   "subscriptionKey": "00000000000000000000000000000000",
   "empresaRfc": "",
-  "dateCreated": "2023-03-08T16:18:58.7529789-06:00",
+  "dateCreated": "2023-03-09T18:30:55.3350872-06:00",
   "status": "Pending",
   "response": null
 }
